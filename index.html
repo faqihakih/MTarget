@@ -22,443 +22,512 @@
 
 <body>
 
-    <header class="text-gray-600 body-font sticky w-full bg-white z-10 top-0 px-8">
-        <div class="mx-auto flex flex-wrap flex-col md:flex-row items-center font-bold">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img src="./Images/logo.png" alt="" width="170" height="48">
-            </a>
-            <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Product</a>
-                <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Solutions</a>
-                <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Stories</a>
-                <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Pricing</a>
-                <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Contact</a>
-            </nav>
-            <nav class="inline-block text-center">
-                <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Request Demo</a>
-                <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Sign In</a>
+    <nav class="shadow-lg sticky w-full bg-white z-10 top-0 font-bold">
+        <div class="mx-auto px-12">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 w-32 h-20">
+                            <img src="./Images/logo.png">
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Product</a>
+                        <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Solutions</a>
+                        <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Stories</a>
+                        <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Pricing</a>
+                        <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Contact</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Request Demo</a>
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Sign In</a>
+                    <button
+                        class="btn-warning inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">Sign
+                        Up</button>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Product</a></li>
+                <li class="active"><a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Solutions</a></li>
+                <li class="active"><a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Stories</a></li>
+                <li class="active"><a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Pricing</a></li>
+                <li class="active"><a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <!-- <header class="text-gray-600 body-font sticky w-full bg-white z-10 top-0 px-8">
+            <div class="mx-auto flex flex-wrap flex-col md:flex-row items-center font-bold">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <img src="./Images/logo.png" alt="" width="170" height="48">
+                </a>
+                <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center">
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Product</a>
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Solutions</a>
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Stories</a>
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Pricing</a>
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Contact</a>
+                </nav>
+                <nav class="inline-block text-center">
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Request Demo</a>
+                    <a class="mr-5 hover:bg-gray-300 px-4 py-2 nav-link">Sign In</a>
+                    <button
+                        class="btn-warning inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">Sign
+                        Up</button>
+                </nav>
+            </div>
+        </header> -->
+
+        <div class="py-12 text-center">
+            <h1 class="text-yellow lg:px-80 md:px-10 sm:px-4 mb-4 text-hero font-black">Here is why you won't find
+                MTARGET pricing online</h1>
+
+            <p class="mb-10 lg:px-72 md:px-10 sm:px-4 font-medium">MTARGET is more than just a software. Whether you
+                wanted to start small or
+                jump right in with the latest technology of integrated cross-channel personalized marketing. We will
+                help
+                you to tailor the software & strategies to bring the highest ROI for your campaign.</p>
+            <button class="btn-warning text-white font-bold text-sm py-4 px-6 rounded hover:bg-yellow-400">Get My
+                Price</button>
+        </div>
+        <div class="lg:px-24 md:px-10 sm:px-5 bg-footer py-16">
+            <table class="mx-auto">
+                <thead>
+                    <tr class="text-white">
+                        <th
+                            class="sm:w-20 md:w-1/6 lg:w-1/6 lg:h-36 md:h-24 sm:h-16 lg:text-3xl md:text-xl sm:text-base font-extrabold text-black">
+                            Marketing <br>
+                            Channel</th>
+                        <th
+                            class="sm:w-20 md:w-1/6 lg:w-1/6 lg:h-36 md:h-24 sm:h-16 text-3xl font-extrabold pro rounded-t-lg">
+                            <h2 class="lg:block md:hidden sm:hidden hidden">Profesional</h2>
+                            <h2 class="w-16 lg:hidden md:block sm:block block">P</h2>
+                            <p class="lg:block md:hidden sm:hidden hidden">The perfect spot to start</p>
+                            <a href=""
+                                class="lg:inline-block md:hidden sm:hidden hidden bg-gray-300 bg-opacity-80 font-semibold py-2 px-4 border border-gray-400 rounded shadow ">Get
+                                Started</a>
+                        </th>
+                        <th
+                            class="sm:w-20 md:w-1/6 lg:w-1/6 lg:h-36 md:h-24 sm:h-16 text-3xl font-extrabold bisnis rounded-t-lg">
+                            <h2 class="lg:block md:hidden sm:hidden hidden">Business</h2>
+                            <h2 class="w-16 lg:hidden md:block sm:block block">B</h2>
+                            <p class="lg:block md:hidden sm:hidden hidden">Essential to level up your marketing</p>
+                            <a href=""
+                                class="lg:inline-block md:hidden sm:hidden hidden bg-gray-300 bg-opacity-80 font-semibold py-2 px-4 border border-gray-400 rounded shadow ">Talk
+                                With Us</a>
+                        </th>
+                        <th
+                            class="sm:w-20 md:w-1/6 lg:w-1/6 lg:h-36 md:h-24 sm:h-16 text-3xl font-extrabold enterprice  rounded-t-lg">
+                            <h2 class="lg:block md:hidden sm:hidden hidden">Enterprice</h2>
+                            <h2 class="w-16 lg:hidden md:block sm:block block">E</h2>
+                            <p class="lg:block md:hidden sm:hidden hidden">Ideal for customer centric brands</p>
+                            <a href=""
+                                class="lg:inline-block md:hidden sm:hidden hidden bg-gray-300 bg-opacity-80 font-semibold py-2 px-4 border border-gray-400 rounded shadow ">Request
+                                Demo</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white shadow-lg">
+                    <tr class="divide-x-2">
+                        <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            Email
+                        </td>
+                        <td class="text-center"><i class="fa fa-check" aria-hidden="true"></i></td>
+                        <td class="text-center"><i class="fa fa-check text-purple-500" aria-hidden="true"></i>
+                        </td>
+                        <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr class="divide-x-2">
+                        <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i> Web
+                            Push
+                            Notification</td>
+                        <td class="text-center"><i class="fa fa-check text-gray-200" aria-hidden="true"></i></td>
+                        <td class="text-center"><i class="fa fa-check text-purple-500" aria-hidden="true"></i>
+                        </td>
+                        <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr class="divide-x-2">
+                        <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i> App
+                            Push
+                            Notification</td>
+                        <td class="text-center"><i class="fa fa-check text-gray-200" aria-hidden="true"></i></td>
+                        <td class="text-center"><i class="fa fa-check  text-gray-200" aria-hidden="true"></i>
+                        </td>
+                        <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr class="divide-x-2">
+                        <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            Dynamic
+                            Banner
+                        </td>
+                        <td class="text-center"><i class="fa fa-check text-gray-200" aria-hidden="true"></i></td>
+                        <td class="text-center"><i class="fa fa-check  text-gray-200" aria-hidden="true"></i>
+                        </td>
+                        <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr class="divide-x-2">
+                        <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            WhatsApp
+                        </td>
+                        <td class="text-center"><i class="fa fa-check text-gray-200" aria-hidden="true"></i></td>
+                        <td class="text-center"><i class="fa fa-check  text-gray-200" aria-hidden="true"></i>
+                        </td>
+                        <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mx-auto pt-20 pb-8 text-center">
+            <h1 class="font-black px-5 text-gray-900 text-3xl">Let's Hear What We Can Do For You</h1>
+            <div class="w-1/2 bg-white flex flex-col md:py-8 mt-8 md:mt-0 mx-auto text-center">
+                <div class="relative mb-4">
+                    <input type="text" id="name" name="name"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        placeholder="Name">
+                </div>
+                <div class="relative mb-4">
+                    <input type="email" id="email" name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        placeholder="Phone Number">
+                </div>
+                <div class="relative mb-4">
+                    <input type="email" id="email" name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        placeholder="Email Address">
+                </div>
                 <button
-                    class="btn-warning inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">Sign
-                    Up</button>
-            </nav>
+                    class="text-center mx-auto text-white btn-warning border-0 py-2 px-6 focus:outline-none rounded text-lg">Pelajari
+                    Sekarang</button>
+            </div>
         </div>
-    </header>
 
-    <div class="py-12 text-center">
-        <h1 class="text-yellow lg:px-80 md:px-10 sm:px-4 mb-4 text-hero font-black">Here is why you won't find
-            MTARGET pricing online</h1>
+        <div class="mx-auto pt-20 pb-8 text-center">
+            <h1 class="font-black text-gray-900 text-3xl">Sophisticated Features For You and Your Customers</h1>
+            <p>We make it possible for you to understand your customers better through data.</p>
+        </div>
 
-        <p class="mb-10 lg:px-72 md:px-10 sm:px-4 font-medium">MTARGET is more than just a software. Whether you
-            wanted to start small or
-            jump right in with the latest technology of integrated cross-channel personalized marketing. We will help
-            you to tailor the software & strategies to bring the highest ROI for your campaign.</p>
-        <button class="btn-warning text-white font-bold text-sm py-4 px-6 rounded hover:bg-yellow-400">Get My
-            Price</button>
-    </div>
-    <div class="lg:px-24 md:px-10 sm:px-5 bg-footer py-16">
-        <table class="mx-auto">
-            <thead>
-                <tr class="text-white">
-                    <th
-                        class="sm:w-20 md:w-1/6 lg:w-1/6 lg:h-36 md:h-24 sm:h-16 lg:text-3xl md:text-xl sm:text-base font-extrabold text-black">
-                        Marketing <br>
-                        Channel</th>
-                    <th
-                        class="sm:w-20 md:w-1/6 lg:w-1/6 lg:h-36 md:h-24 sm:h-16 text-3xl font-extrabold pro rounded-t-lg">
-                        <h2 class="lg:block md:hidden sm:hidden hidden">Profesional</h2>
-                        <h2 class="w-16 lg:hidden md:block sm:block block">P</h2>
-                        <p class="lg:block md:hidden sm:hidden hidden">The perfect spot to start</p>
-                        <a href=""
-                            class="lg:inline-block md:hidden sm:hidden hidden bg-gray-300 bg-opacity-80 font-semibold py-2 px-4 border border-gray-400 rounded shadow ">Get
-                            Started</a>
-                    </th>
-                    <th
-                        class="sm:w-20 md:w-1/6 lg:w-1/6 lg:h-36 md:h-24 sm:h-16 text-3xl font-extrabold bisnis rounded-t-lg">
-                        <h2 class="lg:block md:hidden sm:hidden hidden">Business</h2>
-                        <h2 class="w-16 lg:hidden md:block sm:block block">B</h2>
-                        <p class="lg:block md:hidden sm:hidden hidden">Essential to level up your marketing</p>
-                        <a href=""
-                            class="lg:inline-block md:hidden sm:hidden hidden bg-gray-300 bg-opacity-80 font-semibold py-2 px-4 border border-gray-400 rounded shadow ">Talk
-                            With Us</a>
-                    </th>
-                    <th
-                        class="sm:w-20 md:w-1/6 lg:w-1/6 lg:h-36 md:h-24 sm:h-16 text-3xl font-extrabold enterprice  rounded-t-lg">
-                        <h2 class="lg:block md:hidden sm:hidden hidden">Enterprice</h2>
-                        <h2 class="w-16 lg:hidden md:block sm:block block">E</h2>
-                        <p class="lg:block md:hidden sm:hidden hidden">Ideal for customer centric brands</p>
-                        <a href=""
-                            class="lg:inline-block md:hidden sm:hidden hidden bg-gray-300 bg-opacity-80 font-semibold py-2 px-4 border border-gray-400 rounded shadow ">Request
-                            Demo</a>
-                    </th>
-                </tr>
-            </thead>
-            <tbody class="bg-white shadow-lg">
-                <tr class="divide-x-2">
-                    <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i> Email
-                    </td>
-                    <td class="text-center"><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td class="text-center"><i class="fa fa-check text-purple-500" aria-hidden="true"></i>
-                    </td>
-                    <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
-                </tr>
-                <tr class="divide-x-2">
-                    <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i> Web Push
-                        Notification</td>
-                    <td class="text-center"><i class="fa fa-check text-gray-200" aria-hidden="true"></i></td>
-                    <td class="text-center"><i class="fa fa-check text-purple-500" aria-hidden="true"></i>
-                    </td>
-                    <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
-                </tr>
-                <tr class="divide-x-2">
-                    <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i> App Push
-                        Notification</td>
-                    <td class="text-center"><i class="fa fa-check text-gray-200" aria-hidden="true"></i></td>
-                    <td class="text-center"><i class="fa fa-check  text-gray-200" aria-hidden="true"></i>
-                    </td>
-                    <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
-                </tr>
-                <tr class="divide-x-2">
-                    <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i> Dynamic
-                        Banner
-                    </td>
-                    <td class="text-center"><i class="fa fa-check text-gray-200" aria-hidden="true"></i></td>
-                    <td class="text-center"><i class="fa fa-check  text-gray-200" aria-hidden="true"></i>
-                    </td>
-                    <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
-                </tr>
-                <tr class="divide-x-2">
-                    <td class="p-4 text-yellow font-black"><i class="fa fa-angle-right" aria-hidden="true"></i> WhatsApp
-                    </td>
-                    <td class="text-center"><i class="fa fa-check text-gray-200" aria-hidden="true"></i></td>
-                    <td class="text-center"><i class="fa fa-check  text-gray-200" aria-hidden="true"></i>
-                    </td>
-                    <td class="text-center"><i class="fa fa-check text-yellow" aria-hidden="true"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="mx-auto pt-20 pb-8 text-center">
-        <h1 class="font-black px-5 text-gray-900 text-3xl">Let's Hear What We Can Do For You</h1>
-        <div class="w-1/2 bg-white flex flex-col md:py-8 mt-8 md:mt-0 mx-auto text-center">
-            <div class="relative mb-4">
-                <input type="text" id="name" name="name"
-                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    placeholder="Name">
-            </div>
-            <div class="relative mb-4">
-                <input type="email" id="email" name="email"
-                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    placeholder="Phone Number">
-            </div>
-            <div class="relative mb-4">
-                <input type="email" id="email" name="email"
-                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    placeholder="Email Address">
-            </div>
-            <button
-                class="text-center mx-auto text-white btn-warning border-0 py-2 px-6 focus:outline-none rounded text-lg">Pelajari
-                Sekarang</button>
-        </div>
-    </div>
-
-    <div class="mx-auto pt-20 pb-8 text-center">
-        <h1 class="font-black text-gray-900 text-3xl">Sophisticated Features For You and Your Customers</h1>
-        <p>We make it possible for you to understand your customers better through data.</p>
-    </div>
-
-    <section class="text-gray-600 body-font overflow-hidden">
-        <div class="px-5 py-24 mx-auto">
-            <div class="flex flex-wrap">
-                <div class="lg:pl-12 md:pl-8 sm:px-5 md:w-1/2 flex flex-col items-center">
-                    <span
-                        class="inline-block py-3 px-5 rounded-t-lg btn-warning text-white text-2xl font-medium tracking-widest">Made
-                        for Marketer</span>
-                    <section class="text-gray-600 body-font">
-                        <div class="mx-auto">
-                            <div class="flex flex-wrap shadow-left">
-                                <div>
-                                    <div
-                                        class="h-full bg-opacity-75 px-8 pt-16 pb-14 rounded-lg overflow-hidden text-center relative flex flex-col item start">
-                                        <img src="./Images/flow.png" alt="" srcset="">
-                                        <h1 class="text-3xl font-black text-gray-900 mb-5 text-left">
-                                            Flow</h1>
-                                        <p class="leading-relaxed font-medium mb-5 text-left">Flow will make it possible
-                                            for you to
-                                            build a seamless automated cross channel customer experience, leading
-                                            towards operational efficiency and revenue growth.</p>
-                                        <a
-                                            class="w-40 bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-4 border border-yellow hover:border-transparent rounded">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div
-                                        class="h-full bg-opacity-75 px-8 pb-16 rounded-lg overflow-hidden text-center relative flex flex-col item start">
-                                        <img src="./Images/persona.png" alt="" srcset="">
-                                        <h1 class="text-3xl font-black text-gray-900 mb-5 text-left">
-                                            Persona</h1>
-                                        <p class="leading-relaxed font-medium mb-5 text-left">Get to know your customers
-                                            like never before. You are able to know who is ready for purchase or has
-                                            started to slip away. This is beyond what works and what’s not.</p>
-                                        <a
-                                            class="w-40 bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-4 border border-yellow hover:border-transparent rounded">
-                                            Request Demo
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="lg:pr-12 md:pr-8 sm:px-5 md:w-1/2 flex flex-col items-center">
-                    <span
-                        class="inline-block py-3 px-5 rounded-t-lg bg-purple-500 text-white text-2xl font-medium tracking-widest">Made
-                        for Developer</span>
-                    <section class="text-gray-600 body-font">
-                        <div class="mx-auto">
-                            <div class="flex flex-wrap shadow-right">
-                                <div>
-                                    <div
-                                        class="h-full bg-opacity-75 px-8 pt-16 pb-14 rounded-lg overflow-hidden text-center relative flex flex-col item start">
-                                        <img src="./Images/billing.png" alt="">
-                                        <h1 class="text-3xl font-black text-gray-900 mb-5 text-left">
-                                            E-Billing</h1>
-                                        <p class="leading-relaxed font-medium mb-5 text-left">No more hassle to comply
-                                            with the Government’s online transaction regulations. Ebilling will help you
-                                            to generate and provide transaction bills automatically.</p>
-                                        <a
-                                            class="w-40 bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-4 border border-yellow hover:border-transparent rounded">
-                                            Talk With US
-                                        </a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div
-                                        class="h-full bg-opacity-75 px-8 pb-16 rounded-lg overflow-hidden text-center relative flex flex-col item start">
-                                        <img src="./Images/otpotp.png" alt="" srcset="">
-                                        <h1 class="text-3xl font-black text-gray-900 mb-5 text-left">
-                                            Smart OTP</h1>
-                                        <p class="leading-relaxed font-medium mb-5 text-left">Security is not something
-                                            to mess around. With the latest technology, Smart OTP can be used for
-                                            purposes like authentication and passwordless login. </p>
-                                        <a
-                                            class="w-40 bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-4 border border-yellow hover:border-transparent rounded">
-                                            Try It
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="mx-auto pt-20 pb-8 text-center">
-        <h1 class="font-black text-yellow text-3xl">Frequently Asked Questions</h1>
-    </div>
-    <section class="shadow mx-auto pt-20 pb-8 text-center lg:px-36 md:px-12 sm:px-6">
-        <div class="tab w-full overflow-hidden border-t text-left">
-            <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-            <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-one">Can I try MTARGET
-                before making
-                a payment?</label>
-            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
-                <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
-            </div>
-        </div>
-        <div class="tab w-full overflow-hidden border-t text-left">
-            <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-            <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-one">Can I skip the
-                free trial period to directly subscribe?</label>
-            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
-                <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
-            </div>
-        </div>
-        <div class="tab w-full overflow-hidden border-t text-left">
-            <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-            <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-one">Is the current
-                package price based on contact count?</label>
-            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
-                <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
-            </div>
-        </div>
-        <div class="tab w-full overflow-hidden border-t text-left">
-            <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-            <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-one">What happen if my
-                regular email quota runs out?</label>
-            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
-                <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
-            </div>
-        </div>
-        <div class="tab w-full overflow-hidden border-t text-left">
-            <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-            <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-one">If I extend or
-                upgrade a package, will the previous quota be accumulated to the new package?</label>
-            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
-                <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
-            </div>
-        </div>
-        <div class="tab w-full overflow-hidden border-t text-left">
-            <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-            <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-one">What is meant by
-                extra category on the feature page?</label>
-            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
-                <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
-            </div>
-        </div>
-        <div class="tab w-full overflow-hidden border-t text-left">
-            <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-            <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-one">What is the
-                MTARGET payment system?</label>
-            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
-                <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="text-gray-600 body-font relative bg-footer">
-        <div class="container px-5 py-16 mx-auto">
-            <div class="flex flex-col text-center w-full mb-5">
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Daftar Sekarang</p>
-                <h1 class="sm:text-3xl text-2xl font-black title-font mb-4 text-yellow">Coba MTARGET Trial 30 Hari
-                </h1>
-            </div>
-            <div class="lg:w-2/3 md:w-2/3 mx-auto">
+        <section class="text-gray-600 body-font overflow-hidden">
+            <div class="px-5 py-24 mx-auto">
                 <div class="flex flex-wrap">
-                    <div class="w-2/3">
-                        <div class="relative">
-                            <input type="text" id="name" name="name"
-                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                placeholder="Alamat Email Anda">
+                    <div class="lg:pl-12 md:pl-8 sm:px-5 md:w-1/2 flex flex-col items-center">
+                        <span
+                            class="inline-block py-3 px-5 rounded-t-lg btn-warning text-white text-2xl font-medium tracking-widest">Made
+                            for Marketer</span>
+                        <section class="text-gray-600 body-font">
+                            <div class="mx-auto">
+                                <div class="flex flex-wrap shadow-left">
+                                    <div>
+                                        <div
+                                            class="h-full bg-opacity-75 px-8 pt-16 pb-14 rounded-lg overflow-hidden text-center relative flex flex-col item start">
+                                            <img src="./Images/flow.png" alt="" srcset="">
+                                            <h1 class="text-3xl font-black text-gray-900 mb-5 text-left">
+                                                Flow</h1>
+                                            <p class="leading-relaxed font-medium mb-5 text-left">Flow will make it
+                                                possible
+                                                for you to
+                                                build a seamless automated cross channel customer experience, leading
+                                                towards operational efficiency and revenue growth.</p>
+                                            <a
+                                                class="w-40 bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-4 border border-yellow hover:border-transparent rounded">
+                                                Learn More
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="h-full bg-opacity-75 px-8 pb-16 rounded-lg overflow-hidden text-center relative flex flex-col item start">
+                                            <img src="./Images/persona.png" alt="" srcset="">
+                                            <h1 class="text-3xl font-black text-gray-900 mb-5 text-left">
+                                                Persona</h1>
+                                            <p class="leading-relaxed font-medium mb-5 text-left">Get to know your
+                                                customers
+                                                like never before. You are able to know who is ready for purchase or has
+                                                started to slip away. This is beyond what works and what’s not.</p>
+                                            <a
+                                                class="w-40 bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-4 border border-yellow hover:border-transparent rounded">
+                                                Request Demo
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="lg:pr-12 md:pr-8 sm:px-5 md:w-1/2 flex flex-col items-center">
+                        <span
+                            class="inline-block py-3 px-5 rounded-t-lg bg-purple-500 text-white text-2xl font-medium tracking-widest">Made
+                            for Developer</span>
+                        <section class="text-gray-600 body-font">
+                            <div class="mx-auto">
+                                <div class="flex flex-wrap shadow-right">
+                                    <div>
+                                        <div
+                                            class="h-full bg-opacity-75 px-8 pt-16 pb-14 rounded-lg overflow-hidden text-center relative flex flex-col item start">
+                                            <img src="./Images/billing.png" alt="">
+                                            <h1 class="text-3xl font-black text-gray-900 mb-5 text-left">
+                                                E-Billing</h1>
+                                            <p class="leading-relaxed font-medium mb-5 text-left">No more hassle to
+                                                comply
+                                                with the Government’s online transaction regulations. Ebilling will help
+                                                you
+                                                to generate and provide transaction bills automatically.</p>
+                                            <a
+                                                class="w-40 bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-4 border border-yellow hover:border-transparent rounded">
+                                                Talk With US
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="h-full bg-opacity-75 px-8 pb-16 rounded-lg overflow-hidden text-center relative flex flex-col item start">
+                                            <img src="./Images/otpotp.png" alt="" srcset="">
+                                            <h1 class="text-3xl font-black text-gray-900 mb-5 text-left">
+                                                Smart OTP</h1>
+                                            <p class="leading-relaxed font-medium mb-5 text-left">Security is not
+                                                something
+                                                to mess around. With the latest technology, Smart OTP can be used for
+                                                purposes like authentication and passwordless login. </p>
+                                            <a
+                                                class="w-40 bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-4 border border-yellow hover:border-transparent rounded">
+                                                Try It
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="mx-auto pt-20 pb-8 text-center">
+            <h1 class="font-black text-yellow text-3xl">Frequently Asked Questions</h1>
+        </div>
+
+        <section
+            class="shadow mx-auto flex flex-wrap flex-col justify-center pt-20 pb-8 text-center lg:px-36 md:px-12 sm:px-6">
+            <div class="tab w-full overflow-hidden border-t text-left">
+                <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
+                <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-one">Can I try MTARGET
+                    before making
+                    a payment?</label>
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                    <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t text-left">
+                <input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
+                <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-two">Can I skip the
+                    free trial period to directly subscribe?</label>
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                    <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t text-left">
+                <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
+                <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-three">Is the current
+                    package price based on contact count?</label>
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                    <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t text-left">
+                <input class="absolute opacity-0" id="tab-single-four" type="radio" name="tabs2">
+                <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-four">What happen if my
+                    regular email quota runs out?</label>
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                    <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t text-left">
+                <input class="absolute opacity-0" id="tab-single-five" type="radio" name="tabs2">
+                <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-five">If I extend or
+                    upgrade a package, will the previous quota be accumulated to the new package?</label>
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                    <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t text-left">
+                <input class="absolute opacity-0" id="tab-single-six" type="radio" name="tabs2">
+                <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-six">What is meant by
+                    extra category on the feature page?</label>
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                    <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t text-left">
+                <input class="absolute opacity-0" id="tab-single-seven" type="radio" name="tabs2">
+                <label class="block p-5 cursor-pointer font-bold text-xl" for="tab-single-seven">What is the
+                    MTARGET payment system?</label>
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                    <p class="p-5">Yes, you can use MTARGET starting with a 30 day trial.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-gray-600 body-font relative bg-footer">
+            <div class="container px-5 py-16 mx-auto">
+                <div class="flex flex-col text-center w-full mb-5">
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Daftar Sekarang</p>
+                    <h1 class="sm:text-3xl text-2xl font-black title-font mb-4 text-yellow">Coba MTARGET Trial 30 Hari
+                    </h1>
+                </div>
+                <div class="lg:w-2/3 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap">
+                        <div class="w-2/3">
+                            <div class="relative">
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    placeholder="Alamat Email Anda">
+                            </div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="relative">
+                                <button
+                                    class="flex mx-auto bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-8 border border-yellow hover:border-transparent rounded">Daftar</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-1/3">
-                        <div class="relative">
-                            <button
-                                class="flex mx-auto bg-transparent hover:bg-gray-200 text-yellow font-semibold py-2 px-8 border border-yellow hover:border-transparent rounded">Daftar</button>
-                        </div>
+                </div>
+                <div class="text-center mt-10">
+                    <p>Ingin tim kami menghubungi Anda? <span class="text-yellow"> Request demo disini.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-gray-600 body-font bg-footer">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap md:text-left text-center order-first">
+                    <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-yellow tracking-widest text-sm mb-3">MTARGET</h2>
+                        <nav class="list-none mb-10">
+                            <li class="mt-4">
+                                <a href="" class="text-gray-600 hover:text-yellow">Home</a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="" class="text-gray-600 hover:text-yellow">About</a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="" class="text-gray-600 hover:text-yellow">Blog</a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="" class="text-gray-600 hover:text-yellow">Event</a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="" class="text-gray-600 hover:text-yellow">Press Realease</a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="" class="text-gray-600 hover:text-yellow">Company</a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="" class="text-gray-600 hover:text-yellow">Service</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class=" lg:w-1/5 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-yellow tracking-widest text-sm mb-3">Product
+                        </h2>
+                        <nav class="list-none mb-10">
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-yellow">Product</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-yellow">Study case</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-yellow">Price</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-yellow">Sign Up</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-yellow">Sign In</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-yellow">Request Demo</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-yellow">Dokumentasi</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-2/5 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-yellow tracking-widest text-sm mb-3">Representatif</h2>
+                        <nav class="list-none mb-10">
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-gray-800 inline-flex"><img class="mr-4"
+                                        src="./Images/idn_flag.png" alt="" width="24" height="10">
+                                    Indonesia</a>
+                            </li>
+                            <li class="mt-4">
+                                <select>
+                                    <option>Jakarta Selatan</option>
+                                    <option>Jakarta Utara</option>
+                                    <option>Semarang</option>
+                                </select>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-gray-800">88 Office Tower Lt.10E <br>
+                                    Casablanca Kav.88 Jakarta Selatan 12870</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-gray-800 inline-flex"><img class="mr-4"
+                                        src="./Images/sgp_flag.png" alt="" width="24" height="10">
+                                    Singapura</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-gray-800 inline-flex">51B Circular Road, Singapore
+                                    049406</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-gray-800 inline-flex"><img class="mr-4"
+                                        src="./Images/mys_flag.png" alt="" width="24" height="10">
+                                    Malaysia</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="text-gray-600 hover:text-gray-800 inline-flex">Kelana Square, Petaling Jaya,
+                                    Selangor 47301</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/5 md:w-1/2 w-full px-4">
+
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-10">
-                <p>Ingin tim kami menghubungi Anda? <span class="text-yellow"> Request demo disini.</span></p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-gray-600 body-font bg-footer">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap md:text-left text-center order-first">
-                <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-yellow tracking-widest text-sm mb-3">MTARGET</h2>
-                    <nav class="list-none mb-10">
-                        <li class="mt-4">
-                            <a href="" class="text-gray-600 hover:text-yellow">Home</a>
-                        </li>
-                        <li class="mt-4">
-                            <a href="" class="text-gray-600 hover:text-yellow">About</a>
-                        </li>
-                        <li class="mt-4">
-                            <a href="" class="text-gray-600 hover:text-yellow">Blog</a>
-                        </li>
-                        <li class="mt-4">
-                            <a href="" class="text-gray-600 hover:text-yellow">Event</a>
-                        </li>
-                        <li class="mt-4">
-                            <a href="" class="text-gray-600 hover:text-yellow">Press Realease</a>
-                        </li>
-                        <li class="mt-4">
-                            <a href="" class="text-gray-600 hover:text-yellow">Company</a>
-                        </li>
-                        <li class="mt-4">
-                            <a href="" class="text-gray-600 hover:text-yellow">Service</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class=" lg:w-1/5 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-yellow tracking-widest text-sm mb-3">Product
-                    </h2>
-                    <nav class="list-none mb-10">
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-yellow">Product</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-yellow">Study case</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-yellow">Price</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-yellow">Sign Up</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-yellow">Sign In</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-yellow">Request Demo</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-yellow">Dokumentasi</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-2/5 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-yellow tracking-widest text-sm mb-3">Representatif</h2>
-                    <nav class="list-none mb-10">
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-gray-800 inline-flex"><img class="mr-4"
-                                    src="./Images/idn_flag.png" alt="" width="24" height="10">
-                                Indonesia</a>
-                        </li>
-                        <li class="mt-4">
-                            <select>
-                                <option>Jakarta Selatan</option>
-                                <option>Jakarta Utara</option>
-                                <option>Semarang</option>
-                            </select>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-gray-800">88 Office Tower Lt.10E <br>
-                                Casablanca Kav.88 Jakarta Selatan 12870</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-gray-800 inline-flex"><img class="mr-4"
-                                    src="./Images/sgp_flag.png" alt="" width="24" height="10">
-                                Singapura</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-gray-800 inline-flex">51B Circular Road, Singapore
-                                049406</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-gray-800 inline-flex"><img class="mr-4"
-                                    src="./Images/mys_flag.png" alt="" width="24" height="10">
-                                Malaysia</a>
-                        </li>
-                        <li class="mt-4">
-                            <a class="text-gray-600 hover:text-gray-800 inline-flex">Kelana Square, Petaling Jaya,
-                                Selangor 47301</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-
+            <div class="text-center text-base">
+                <div class="container px-5 py-6 mx-auto flex justify-center items-center sm:flex-row flex-col">
+                    <span>MTARGET © 2017 - 2019 PT. Target Sukses Sinergi | Mailtarget Pte Ltd <span
+                            class="font-black">www.mtarget.co</span></span>
                 </div>
             </div>
-        </div>
-        <div class="text-center text-base">
-            <div class="container px-5 py-6 mx-auto flex justify-center items-center sm:flex-row flex-col">
-                <span>MTARGET © 2017 - 2019 PT. Target Sukses Sinergi | Mailtarget Pte Ltd <span
-                        class="font-black">www.mtarget.co</span></span>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
     /* Optional Javascript to close the radio button version by clicking it again */
     var myRadios = document.getElementsByName('tabs2');
     var setCheck;
